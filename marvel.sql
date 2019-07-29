@@ -69,5 +69,16 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:0
 -- SELECT show_time FROM movies WHERE title = 'Iron Man 2';
 -- UPDATE movies SET show_time = '20:45' WHERE id = 7;
 
+-- EXTENSION --
+
+-- DELETE FROM people WHERE id IN (1,2,3,4);
+-- DELETE FROM people WHERE id BETWEEN 10 AND 16;
+-- DELETE FROM people WHERE id >= 5 AND id <= 8 --like BETWEEN
+
+-- DELETE FROM movies WHERE year = 2017;
+
+-- >>> used this in star_wars_one_to_many.sql for removing all lightsabers owned by Obi Wan!<<<
+-- DELETE FROM lightsabers WHERE holder_id IN (SELECT id FROM characters WHERE id = 1);
+
 -- SELECT * FROM movies;
 -- SELECT * FROM people;
